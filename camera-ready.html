@@ -1,54 +1,94 @@
----
-# this is an empty front matter
----
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
-
-    <!-- css -->
+    <title>DTwin 2026 | Submission &amp; Registration</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    {% include header.html %}
 
-    <section id="camera-ready" class="section registration" style="display: block;">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="site-branding">
+                    <a class="logo" href="index.html">DTwin 2026</a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cfp.html">Call for Papers</a></li>
+                    <li><a href="cfp-poster-demo.html">Posters &amp; Demos</a></li>
+                    <li><a href="keynote.html">Keynotes</a></li>
+                    <li><a href="panel.html">Panel</a></li>
+                    <li><a href="committee.html">Committees</a></li>
+                    <li><a href="camera-ready.html">Submission &amp; Registration</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <h1>DTwin 2026</h1>
+            <h2>ACM MobiCom Workshop on Digital Twins over NextG Wireless Networks</h2>
+            <br class="mobile-break">
+            <h2>Austin, TX, USA<br>October 30, 2026</h2>
+            <p><small>Co-located with <a href="https://www.sigmobile.org/mobicom/2026/" target="_blank"><font color="FFFFFF">ACM MobiCom 2026</font></a></small></p>
+        </div>
+    </header>
+
+    <section id="submission" class="section registration" style="display: block;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">PUBLICATION INFORMATION</h3>
+                    <h3 class="section-title">SUBMISSION AND REGISTRATION</h3>
                 </div>
             </div>
 
-            <p id="listing" align="justify"><b>RIGHTS MANAGEMENT FORM</b></p>
-            <li>Before submitting the final version of your paper, please complete the rights management form at <a href="https://wintech24.hotcrp.com/" target="_blank"><b><u>{{ site.data.conference.short_title }} {{ site.data.conference.year }} submission page</u></b></a>.</li>
+            <p id="listing" align="justify"><b>SUBMISSION GUIDELINES</b></p>
+            <ul>
+                <li>The workshop accepts only original and previously unpublished papers.</li>
+                <li>All submissions must be double-blind and formatted in standard ACM camera-ready format (double-column, 10pt font).</li>
+                <li>Technical papers: up to 6 pages including references (with the option of 2 extra pages at a cost per extra page).</li>
+                <li>Demo papers: up to 2 pages including references.</li>
+                <li>Camera-ready papers should use the ACM template: <a href="http://www.acm.org/publications/proceedings-template" target="_blank"><u>http://www.acm.org/publications/proceedings-template</u></a>. In LaTeX, use <code>\documentclass[sigconf, 10pt]{acmart}</code>.</li>
+                <li>Submission portal: to be announced.</li>
+            </ul>
 
-            <br>
+            <br/>
 
-            <p id="listing" align="justify"><b>FINAL VERSION INSTRUCTIONS</b></p>
-            <li>Papers should be no more than 8 (eight) pages single-spaced pages including text, figures, references and any appendices.</li>
-            <li>Camera-ready papers should adhere to the ACM templates that can be found <a href="http://www.acm.org/publications/proceedings-template" target="_blank"><b><u>here</u></b></a>. Templates are provided for formatting papers in MS Word and LaTeX. In LaTeX, you should use <code>\documentclass[sigconf, 10pt]{acmart}</code>.</li>
-            <li>Font size no smaller than 10 points.</li>
-            <li>Please do NOT number the pages of your camera-ready paper (by default page numbers are disabled in the ACM template).</li>
-            <li>You should provide proper indexing information in the final version according to the ACM Computing Classification System (CCS). More information about the ACM CCS is available on the ACM CCS website.</li>
-            <li>After completing their rights management form, you will be emailed the correct rights management text and bibliographic strip to place within your paper. It is essential that you add the text into your paper.</li>
-            <li>Avoid using any special characters or non-standard fonts. ACM must be able to display and print your submission exactly as we receive it using only standard tools and printers, so we strongly suggest that you use only standard fonts embedded in the PDF file.</li>
+            <p id="listing" align="justify"><b>IMPORTANT DATES</b></p>
+            <ul>
+                <li>Paper Submission: June 5, 2026</li>
+                <li>Notification of Acceptance: July 31, 2026</li>
+                <li>Camera-ready: August 21, 2026</li>
+                <li>Workshop Date: October 30, 2026 (Full Day)</li>
+            </ul>
 
-            <br>
+            <br/>
 
-            <p id="listing" align="justify"><b>SUBMIT THE FINAL VERSION OF THE PAPER<br></b></p>
-            <li>Go to the <a href="https://wintech23.hotcrp.com/" target="_blank"><b><u>{{ site.data.conference.short_title }} {{ site.data.conference.year }} submission page</u></b></a> and edit your paper.</li>
-            <li>Submit the source files and PDF of the final version of your paper.</li>
+            <p id="listing" align="justify"><b>REGISTRATION NOTES</b></p>
+            <ul>
+                <li>No remote participation.</li>
+                <li>Attendees must hold a full registration + workshop, or a workshop-only registration.</li>
+            </ul>
+
+            <br/>
+            <p>For inquiries, contact <a href="mailto:zzhang66@ncsu.edu"><u>zzhang66@ncsu.edu</u></a>.</p>
 
         </div>
     </section>
 
-    <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>

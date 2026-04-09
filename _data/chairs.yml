@@ -1,21 +1,21 @@
 general_chairs:
+  - firstname: Yuchen
+    lastname: Liu
+    institution: North Carolina State University, USA
+  - firstname: Debashri
+    lastname: Roy
+    institution: The University of Texas Arlington, USA
   - firstname: Salvatore
     lastname: D'Oro
-    institution: Northeastern University, Boston, MA, USA
-  - firstname: Aloizio
-    lastname: da Silva
-    institution: Commonwealth Cyber Initiative, Arlington, VA, USA
+    institution: Northeastern University, USA
 
 
 poster_demo_chairs:
-  - firstname: Vincenzo
-    lastname: Sciancalepore
-    institution: NEC, Germany
-  - firstname: Vijay
-    lastname: Shah
-    institution: North Carolina State University, USA
+  - firstname: Salvatore
+    lastname: D'Oro
+    institution: Northeastern University, USA
 
 web_chairs:
-   - firstname: Davide
-     lastname: Villa
-     institution: Northeastern University, USA
+   - firstname: Zifan
+     lastname: Zhang
+     institution: North Carolina State University, USA

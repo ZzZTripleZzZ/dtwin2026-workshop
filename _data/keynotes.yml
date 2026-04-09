@@ -1,14 +1,8 @@
-#- firstname: 
-#  lastname: 
-#  academic_title: 
-#  title: 
-#  affiliation: 
-#  image: 
-#  abstract: |-
-#
-#  biography: |-
-# 
-#  paper:
-#    title: 
-#    authors: 
-#    doi: 
+- academic_title: ""
+  firstname: "CC"
+  lastname: "Chong"
+  affiliation: "NVIDIA"
+- academic_title: ""
+  firstname: "Walid"
+  lastname: "Saad"
+  affiliation: "Virginia Tech"

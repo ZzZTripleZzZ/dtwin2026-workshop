@@ -1,64 +1,83 @@
----
-# this is an empty front matter
----
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
-
-    <!-- css -->
+    <title>DTwin 2026 | Posters &amp; Demos</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    {% include header.html %}
 
-    <section id="cfp" class="section cfp" style="display: block;">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="site-branding">
+                    <a class="logo" href="index.html">DTwin 2026</a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cfp.html">Call for Papers</a></li>
+                    <li><a href="cfp-poster-demo.html">Posters &amp; Demos</a></li>
+                    <li><a href="keynote.html">Keynotes</a></li>
+                    <li><a href="panel.html">Panel</a></li>
+                    <li><a href="committee.html">Committees</a></li>
+                    <li><a href="camera-ready.html">Submission &amp; Registration</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <h1>DTwin 2026</h1>
+            <h2>ACM MobiCom Workshop on Digital Twins over NextG Wireless Networks</h2>
+            <br class="mobile-break">
+            <h2>Austin, TX, USA<br>October 30, 2026</h2>
+            <p><small>Co-located with <a href="https://www.sigmobile.org/mobicom/2026/" target="_blank"><font color="FFFFFF">ACM MobiCom 2026</font></a></small></p>
+        </div>
+    </header>
+
+    <section id="cfp-poster-demo" class="section cfp" style="display: block;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">CALL FOR DEMOS</h3>
+                    <h3 class="section-title">CALL FOR POSTERS AND DEMOS</h3>
                 </div>
             </div>
 
-            <p>ACM WiNTECH continues its established tradition of hosting a demos and 
-            posters session. We welcome proposals for demonstrations of novel work 
-            in wireless network testbeds, measurement platforms and results, and 
-            innovative prototypes. The areas of interest overlap those listed in the 
-            workshop Call for Papers. The innovations showcased can be at any layer 
-            of the protocol stack, from physical to application. However, we 
-            particularly encourage demonstrations and posters that span over 
-            multiple layers. Wireless networking must be the key topic. Posters may 
-            describe work in progress, while the session will offer an excellent 
-            opportunity to receive feedback and discuss early research. We emphasize 
-            that the demos and posters session is not a forum to display commercial 
-            products.</p>
+            <p align="justify">We especially encourage poster and demo submissions showcasing DT experimental platforms, prototypes, and real-world applications over NextG wireless networks. The poster/demo session is a dynamic forum for sharing early-stage results, getting feedback, and fostering technical discussion among academic, industry, and government participants.</p>
 
-            <p>Each submission must be a single PDF file no longer than two (2) pages 
-            in length (including figures, tables, and references), using two-column 
-            format, 10-point size or greater and in PDF format following the same 
-            format as the regular papers. Submissions must include the author name 
-            and affiliation. All demo titles should start with "Demo:". Papers must 
-            include the authors' name and affiliation.</p>
+            <p align="justify">Suitable submissions include, but are not limited to, demonstrations of digital twin platforms, prototype implementations, measurement studies, and real-world deployments related to the topics listed in the <a href="cfp.html">Call for Papers</a>.</p>
 
-            <p>All submissions should be sent to: acmwintech@gmail.com</p>
+            <p><b>Submission Guidelines:</b></p>
+            <ul>
+                <li>Demo papers must not exceed 2 pages in ACM double-column format, 10pt font, including references.</li>
+                <li>All demo titles should start with "Demo:".</li>
+                <li>Submissions must include author names and affiliations.</li>
+                <li>Submission portal details will be announced soon.</li>
+            </ul>
 
+            <p>A <b>Best Poster/Demo Award</b> will be presented to recognize outstanding contributions.</p>
 
             <p><b>IMPORTANT DATES:</b><br/>
-<!--            TODO: update dates-->
-            <p>Submission deadline: August 7th, 2023 <del>July 21st, 2023</del></p>
-            <p>Notification to authors: August 9th, 2023</p>
-            <p>Workshop: October 6th, 2023</p>
+            Poster/Demo Submission: June 5, 2026<br/>
+            Notification to Authors: July 31, 2026<br/>
+            Workshop Date: October 30, 2026 (Full Day, Austin, TX, USA)</p>
+
         </div>
     </section>
 
-    <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </body>

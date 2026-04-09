@@ -1,63 +1,79 @@
----
-# this is an empty front matter
----
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
-
-    <!-- css -->
+    <title>DTwin 2026 | ACM MobiCom 2026</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    {% include header.html %}
+
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="site-branding">
+                    <a class="logo" href="index.html">DTwin 2026</a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cfp.html">Call for Papers</a></li>
+                    <li><a href="cfp-poster-demo.html">Posters &amp; Demos</a></li>
+                    <li><a href="keynote.html">Keynotes</a></li>
+                    <li><a href="panel.html">Panel</a></li>
+                    <li><a href="committee.html">Committees</a></li>
+                    <li><a href="camera-ready.html">Submission &amp; Registration</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <h1>DTwin 2026</h1>
+            <h2>ACM MobiCom Workshop on Digital Twins over NextG Wireless Networks</h2>
+            <br class="mobile-break">
+            <h2>Austin, TX, USA<br>October 30, 2026</h2>
+            <p><small>Co-located with <a href="https://www.sigmobile.org/mobicom/2026/" target="_blank"><font color="FFFFFF">ACM MobiCom 2026</font></a></small></p>
+        </div>
+    </header>
 
     <section id="about" class="section about" style="display: block;">
         <div class="container">
-            <h3 style="text-align:center;" class="section-title">{{ site.data.conference.title }}
-                <br><br>
-<!--                TODO: update sponsors-->
-                <font size="4">Technically co-sponsored by the <a href="https://advancedwireless.org/" target="_blank">PAWR</a> Project Office and by the <a href="https://slices-ri.eu" target="_blank">SLICES-RI</a> program</font>
-            </h3>
+            <h3 style="text-align:center;" class="section-title">ACM MobiCom Workshop on Digital Twins over NextG Wireless Networks</h3>
 
-            <p align="justify">The increasing complexity of the wireless ecosystem witnessed in recent years has prompted an increasing need of experimental validation of innovative wireless solutions and applications and their coexistence. The WiNTECH workshop has been created to deal with all those methodological, technical and policy issues to be faced when defining, running, controlling and benchmarking experiments on wireless solutions. The workshop, now in its 18th edition, intends to bring together academic researchers and industry players working on different aspects of experimental wireless communications and networking. As such, it serves as a forum for sharing experiences and results with real testbeds, experimental evaluation, prototyping and empirical characterization of wireless technologies.</p>
+            <p align="justify">In the beyond-5G and 6G era, complex real-world digital twins (DTs) are expected to emerge and drive digital transformation across industry and society. DT integration with advanced wireless networks enables seamless bi-directional information flow between the cyber and physical worlds, fostering a more interconnected digital ecosystem and supporting innovative applications across diverse domains.</p>
 
-            <p align="justify">The workshop will facilitate discussions on unresolved issues, including new laboratory methodologies, key real-life limitations of wireless technologies that have emerged over the past few years (e.g., mmWave, underwater, 5G, IoT, wearables, Open RAN and SDN), as well as key challenges facing the wireless networking of the future. As WiNTECH concerns experimental communications and networking, it will feature a relatively large demo session as centerpiece, where real testbeds, deployments and prototypes can be demonstrated and discussed. A demo competition is planned.</p>
+            <p align="justify">DTs provide high-fidelity platforms that mirror real-world network behavior, allowing operators to anticipate loads, identify potential failures, and evaluate new configurations before deployment. This predictive capability improves the efficiency, reliability, and scalability of NextG wireless networks while significantly reducing the time and cost of planning and operation.</p>
 
-            <p align="justify">All the regular papers will be considered for the <b>Best Paper Award</b>.</p>
-
-            <p id="listing" align="justify">In addition to the regular papers, the program of {{ site.data.conference.short_title }} {{ site.data.conference.year }} will also include:</p>
-<!--            TODO: Update this section-->
-            <li>A keynote speech from an expert in experimental wireless research</li>
-            <li>A Demo session</li>
-            <br>
-
-						{% if site.data.keynotes.size > 0 %}
-            <p><b>Keynote Speakers:</b><br/>
-						{% for keynote in site.data.keynotes %}
-							{{ keynote.academic_title }} {{ keynote.firstname }} {{ keynote.lastname }}, {{ keynote.affiliation }}
-						{% endfor %}
-						{% endif %}
+            <p align="justify">This full-day workshop brings together researchers and experts from academia, industry, and governmental agencies to address key challenges at the intersection of DTs and advanced wireless network technologies. The workshop features two keynote talks, a panel session, paper presentations, and a poster/demo session.</p>
 
             <p><b>IMPORTANT DATES:</b><br/>
-            Paper registration: {{ site.data.dates.registration }}<br/>
-            Paper submission: {{ site.data.dates.submission }}<br/>
-            Demos &amp; Posters submission: {{ site.data.dates.poster_demo_submission }}<br/>
-            Acceptance notification: {{ site.data.dates.notification }}<br/>
-            Camera ready: {{ site.data.dates.camera_ready }}<br/>
-            Workshop: {{ site.data.conference.dates }}</p>
+            Paper Submission: June 5, 2026<br/>
+            Notification of Acceptance: July 31, 2026<br/>
+            Camera-ready: August 21, 2026<br/>
+            Workshop Date: October 30, 2026 (Full Day)</p>
 
-        </div><!-- /.container -->
+            <p><b>Registration Notes:</b><br/>
+            No remote participation.<br/>
+            Full registration + workshop, or workshop registration required.</p>
+
+            <p><b>Keynote Speakers:</b><br/>
+            CC Chong, NVIDIA<br/>
+            Walid Saad, Virginia Tech</p>
+        </div>
     </section>
 
-    <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </body>
