@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* page-scoped tweaks: instruction lists read better unbolded */
+        #submission ul li,
+        #camera-ready ul li,
+        #camera-ready ol li { font-weight: 400; }
+        #camera-ready .subhead { font-weight: 700; margin: 0 0 10px; }
+        #camera-ready .block { margin-bottom: 35px; }
+        #camera-ready .anchor-offset { display: block; position: relative; top: -70px; visibility: hidden; }
+        .page-subnav { margin: 0 0 35px; padding: 0; list-style: none; text-align: center; }
+        .page-subnav li { display: inline-block; margin: 0 12px 8px; font-weight: 400; }
+        .callout { border-left: 3px solid #313131; padding: 10px 0 10px 18px; margin: 0 0 30px; }
+    </style>
 </head>
 <body data-spy="scroll" data-target="#site-nav">
 
@@ -55,7 +67,14 @@
                 </div>
             </div>
 
-            <p id="listing" align="justify"><b>SUBMISSION GUIDELINES</b></p>
+            <ul class="page-subnav">
+                <li><a href="#submission-guidelines">Submission Guidelines</a></li>
+                <li><a href="#important-dates">Important Dates</a></li>
+                <li><a href="#registration">Registration Notes</a></li>
+                <li><a href="#camera-ready">Camera-Ready Instructions</a></li>
+            </ul>
+
+            <p id="listing" align="justify"><a id="submission-guidelines"></a><b>SUBMISSION GUIDELINES</b></p>
             <ul>
                 <li>The workshop accepts only original and previously unpublished papers.</li>
                 <li>All submissions must be double-blind and formatted in standard ACM camera-ready format (double-column, 10pt font).</li>
@@ -67,24 +86,94 @@
 
             <br/>
 
-            <p id="listing" align="justify"><b>IMPORTANT DATES</b></p>
+            <p id="listing" align="justify"><a id="important-dates"></a><b>IMPORTANT DATES</b></p>
             <ul>
                 <li>Paper Submission: July 20, 2026</li>
                 <li>Notification of Acceptance: Aug 15, 2026</li>
+                <li>Title and author list finalized in HotCRP: Aug 20, 2026</li>
                 <li>Camera-ready: Aug 31, 2026</li>
                 <li>Workshop Date: October 30, 2026 (Full Day)</li>
             </ul>
 
             <br/>
 
-            <p id="listing" align="justify"><b>REGISTRATION NOTES</b></p>
+            <p id="listing" align="justify"><a id="registration"></a><b>REGISTRATION NOTES</b></p>
             <ul>
                 <li>No remote participation.</li>
                 <li>Attendees must hold a full registration + workshop, or a workshop-only registration.</li>
             </ul>
+        </div>
+    </section>
 
-            <br/>
-            <p>For inquiries, contact <a href="mailto:zzhang66@ncsu.edu"><u>zzhang66@ncsu.edu</u></a>.</p>
+    <section id="camera-ready" class="section" style="display: block; padding-top: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">CAMERA-READY INSTRUCTIONS</h3>
+                </div>
+            </div>
+
+            <div class="block">
+                <p align="justify">Camera-ready papers for the DTwin 2026 are due August 31. In summary, you need to do the following:</p>
+                <ul>
+                    <li>Finalize the title of your paper and author list order in hotCRP ASAP by <b>August 20, 2026</b>. You won't be able to change that after the ACM copyright forms are generated.</li>
+                    <li>Fill out the copyright form: You should receive an email from ACM eRights.</li>
+                    <li>Adapt your stylesheet to the most recent ACM template, including bibliographic and copyright strip.</li>
+                    <li>Follow the guideline below to finalize the formatting of your paper.</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <p class="subhead">Complete rights management form:</p>
+                <ul>
+                    <li>Before submitting camera-ready papers, you need to complete the rights management form. You will be notified by email once these forms are available and ready to sign.</li>
+                    <li>As rights management emails are sent from an automated system, there is a chance that emails sent will wind up in SPAM folders. Please make sure that you and your authors set email SPAM settings to allow emails from &ldquo;<a href="mailto:rightsreview@acm.org"><u>rightsreview@acm.org</u></a>&rdquo;.</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <p class="subhead">Format your Final Manuscript:</p>
+                <ul>
+                    <li>Camera-ready papers should adhere to the ACM templates that can be found here: <a href="http://www.acm.org/publications/proceedings-template" target="_blank"><u>http://www.acm.org/publications/proceedings-template</u></a>. Templates are provided for formatting papers in MS Word and LaTeX. In LaTeX, you should use <code>\documentclass[sigconf, 10pt]{acmart}</code>.</li>
+                    <li>Please do <b>NOT</b> number the pages of your camera-ready paper (by default page numbers are disabled in the ACM template).</li>
+                    <li>You should provide proper indexing information in the final version according to the ACM Computing Classification System (CCS). More information about the ACM CCS is available on the ACM CCS website.</li>
+                    <li>Contain no more than six (6) single-spaced pages, including figures, tables, any appendices, and any other material, followed by as many pages as necessary for bibliographic references. Demo and poster papers should contain no more than two (2) pages including references.</li>
+                    <li>Font size no smaller than 10 points.</li>
+                    <li>Double column format with each column having dimensions 9.25 inches x 3.33 inches, a space of 0.33 inches between the two columns, and with no more than 55 lines of text per column.</li>
+                    <li>Fit properly on US letter-sized paper (8.5 inches by 11 inches).</li>
+                    <li>Double check the title and abstracts you provided in hotCRP and make sure it matches with the paper and does not include any latex-related commands or symbols.</li>
+                    <li>Avoid using any special characters or non-standard fonts. We must be able to display and print your submission exactly as we receive it using only standard tools and printers, so we strongly suggest that you use only standard fonts embedded in the PDF file.</li>
+                    <li>After completing the rights management form, you will be emailed the correct rights management text and bibliographic strip to place within your paper. It is essential that you add the text into your paper.</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <p class="subhead">Submit camera-ready version:</p>
+                <ul>
+                    <li>Go to the DTwin 2026 submission page and edit your paper: <a href="https://dtwin26.hotcrp.com" target="_blank"><u>https://dtwin26.hotcrp.com</u></a></li>
+                    <li>Submit the source files and PDF of your camera-ready paper.</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <p class="subhead">Important update on ACM's new open access publishing model for 2026 ACM Conferences!</p>
+                <p align="justify">Starting January 1, 2026, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional model or by paying Article Processing Charges (APCs). With over 2,600 institutions already part of ACM Open, the majority of ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 76%).</p>
+                <p align="justify">Authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial waiver. To find out whether an APC applies to your article, please consult the list of participating institutions in ACM Open and review the <a href="https://www.acm.org/publications/policies/policy-on-discretionary-open-access-apc-waivers" target="_blank"><u>https://www.acm.org/publications/policies/policy-on-discretionary-open-access-apc-waivers</u></a>. Keep in mind that waivers are rare and are granted based on specific criteria set by ACM.</p>
+                <p align="justify">Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow more time for institutions to join ACM Open. The subsidy will offer:</p>
+                <ul>
+                    <li>$250 APC for ACM/SIG members</li>
+                    <li>$350 for non-members</li>
+                </ul>
+                <p align="justify">This represents a 65% discount, funded directly by ACM. Authors are encouraged to help advocate for their institutions to join ACM Open during this transition period. This temporary subsidized pricing will apply to all conferences scheduled for 2026. If the authors find the subsidized APC price unaffordable AND do not qualify for the APC waiver (as per the policy linked above), then please contact the DTwin co-chairs (emails below).</p>
+            </div>
+
+            <div class="block">
+                <p class="subhead">Questions</p>
+                <p align="justify">If you have any questions about the camera-ready process, feel free to contact DTwin co-chairs
+                    Sara Garcia Sanchez (<a href="mailto:sara.garcia.sanchez@ibm.com"><u>sara.garcia.sanchez@ibm.com</u></a>),
+                    Yuchen Liu (<a href="mailto:yuchen.liu@ncsu.edu"><u>yuchen.liu@ncsu.edu</u></a>), and
+                    Debashri Roy (<a href="mailto:debashri.roy@uta.edu"><u>debashri.roy@uta.edu</u></a>).</p>
+            </div>
 
         </div>
     </section>
