@@ -713,6 +713,21 @@ ulx li {
   font-weight: 300;
   margin-bottom: 6px;
 }
+.program-table .program-papers li.program-award,
+.program-table .program-papers li.program-award b {
+  color: #c0392b;
+}
+.program-table .award-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #c0392b;
+  border-radius: 3px;
+  white-space: nowrap;
+}
 .program-table tr.program-break > td {
   background-color: #f5f5f5;
 }
